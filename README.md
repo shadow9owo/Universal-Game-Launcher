@@ -15,3 +15,5 @@ Universal Crossplatform Game Launcher
 
 ```performancemode``` - 0 (quality) , 1 (performance) <br>
 ```windowresolution``` - more info later related to the resolution alg
+
+the ini format is based of DG2D INI wrapper <a href="https://github.com/shadow9owo/DG2D/tree/main/ini">link</a>
