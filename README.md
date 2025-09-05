@@ -13,5 +13,5 @@ Universal Crossplatform Game Launcher
 <p>ini format</p>
 <br>
 
-```performancemode``` - 0 (quality) , 1 (performance) 
+```performancemode``` - 0 (quality) , 1 (performance) <br>
 ```windowresolution```
