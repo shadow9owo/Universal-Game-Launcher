@@ -11,9 +11,7 @@ Universal Crossplatform Game Launcher
 
 ## how to implement?
 
-<br>
-<p>ini format</p>
-<br>
+(ini format explained)
 
 ```performancemode``` - 0 (quality) , 1 (performance) <br>
 ```windowresolution``` - more info later related to the resolution alg
