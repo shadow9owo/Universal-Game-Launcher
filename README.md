@@ -1,12 +1,9 @@
 # Universal-Game-Launcher
 Universal Crossplatform Game Launcher
-<br>
-<br>
-doomgames 2025# targetting legacy hardware and yo shiz
-<br>
-<br>
+----
+<p>doomgames 2025# targetting legacy hardware and yo shiz</p>
+----
 <img src="image.png"></img>
-<br>
------
+----
 <p>java 11+</p>
-targetting DG2D .INI wrapper
+<p>targetting DG2D .INI wrapper</p>
