@@ -19,3 +19,5 @@ Universal Crossplatform Game Launcher
 the ini format is based of DG2D INI wrapper <a href="https://github.com/shadow9owo/DG2D/tree/main/ini">link</a>
 
 <br>
+
+### how is the window resolution list generated?
