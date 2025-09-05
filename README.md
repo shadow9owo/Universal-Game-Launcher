@@ -8,7 +8,5 @@ doomgames 2025# targetting legacy hardware and yo shiz
 <img src="image.png"></img>
 <br>
 -----
-<br>
 <p>java 11+</p>
-<br>
 targetting DG2D .INI wrapper
