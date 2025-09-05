@@ -81,4 +81,6 @@ for (int i = 0; i < monitorCount; i++) {
 
 ````
 
+<img src="banner.png"></img>
+
 dg2d shadowdev - 2025
