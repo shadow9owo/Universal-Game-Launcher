@@ -7,3 +7,5 @@ Universal Crossplatform Game Launcher
 <br>
 <p>java 11+</p>
 <p>targetting DG2D .INI wrapper</p>
+
+## how to implement?
