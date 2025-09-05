@@ -42,3 +42,46 @@ the ini format is based of DG2D INI wrapper <a href="https://github.com/shadow9o
             return Integer.compare(pixelsB, pixelsA); // descending
         });
 ````
+example implementation in C && RAYLIB
+````
+#include "raylib.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    int width;
+    int height;
+} Resolution;
+
+int compareResolutions(const void *a, const void *b) {
+    Resolution *ra = (Resolution *)a;
+    Resolution *rb = (Resolution *)b;
+    int pixelsA = ra->width * ra->height;
+    int pixelsB = rb->width * rb->height;
+    return pixelsB - pixelsA; // descending
+}
+
+int main(void) {
+    // Init raylib (needed before monitor queries)
+    InitWindow(800, 600, "Resolution list (raylib)");
+
+    int monitorCount = GetMonitorCount();
+    Resolution *resolutions = malloc(monitorCount * sizeof(Resolution));
+
+    for (int i = 0; i < monitorCount; i++) {
+        resolutions[i].width = GetMonitorWidth(i);
+        resolutions[i].height = GetMonitorHeight(i);
+    }
+
+    qsort(resolutions, monitorCount, sizeof(Resolution), compareResolutions);
+
+    for (int i = 0; i < monitorCount; i++) {
+        printf("Monitor %d: %dx%d\n", i, resolutions[i].width, resolutions[i].height);
+    }
+
+    free(resolutions);
+
+    CloseWindow();
+    return 0;
+}
+````
