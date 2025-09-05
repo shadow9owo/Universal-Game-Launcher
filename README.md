@@ -14,4 +14,4 @@ Universal Crossplatform Game Launcher
 <br>
 
 ```performancemode``` - 0 (quality) , 1 (performance) <br>
-```windowresolution```
+```windowresolution``` - more info later related to the resolution alg
