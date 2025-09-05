@@ -22,6 +22,7 @@ the ini format is based of DG2D INI wrapper <a href="https://github.com/shadow9o
 
 ### how is the window resolution list generated?
 
+(java)
 ````
         GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
         DisplayMode[] modes = gd.getDisplayModes();
