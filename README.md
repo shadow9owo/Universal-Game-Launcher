@@ -7,5 +7,11 @@ Universal Crossplatform Game Launcher
 <br>
 <p>java 11+</p>
 <p>targetting DG2D .INI wrapper</p>
-
+<br>
 ## how to implement?
+<br>
+<p>ini format</p>
+<br>
+
+```performancemode``` - 0 (quality) , 1 (performance) 
+```windowresolution```
