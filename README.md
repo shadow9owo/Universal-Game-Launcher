@@ -80,3 +80,5 @@ for (int i = 0; i < monitorCount; i++) {
 }
 
 ````
+
+dg2d shadowdev - 2025
