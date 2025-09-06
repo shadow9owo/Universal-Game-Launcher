@@ -10,6 +10,11 @@ Universal Crossplatform Game Launcher
 
 ## how to implement?
 
+!!!!<br>
+GAME HAS TO BE IN THE SAME DIRECTORY<br>
+(game.exe or game.elf)<br>
+!!!!
+
 (ini format explained)
 
 ```performancemode``` - 0 (quality) , 1 (performance) <br>
