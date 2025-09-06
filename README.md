@@ -3,7 +3,7 @@ Universal Crossplatform Game Launcher
 <br>
 <p>doomgames 2025# targetting legacy hardware and yo shiz</p>
 <br>
-<img src="image.png"></img>
+<img src="image.png" alt="ui showcase"></img>
 <br>
 <p>java 11+</p>
 <p>targetting DG2D .INI wrapper</p>
@@ -78,6 +78,6 @@ for (int i = 0; i < monitorCount; i++) {
 
 ````
 
-<img src="banner.png"></img>
+<img src="banner.png" alt="schyzo - honzikova cesta 2025"></img>
 
 dg2d shadowdev - 2025
