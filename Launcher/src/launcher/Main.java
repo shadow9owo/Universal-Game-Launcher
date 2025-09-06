@@ -159,7 +159,54 @@ public class Main {
 
         frame.setLayout(null);
         frame.setSize(Math.round(420 * scaleFactor), Math.round(300 * scaleFactor));
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        
+        frame.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent e) {
+            	String os = System.getProperty("os.name").toLowerCase();
+
+                if (os.contains("windows")) {
+                    if (os.contains("nt") || os.contains("2000") || os.contains("xp") || os.contains("vista") || os.contains("7") || os.contains("8") || os.contains("10") || os.contains("11")) {
+                    	try {
+                    		File file = new File("game.exe");
+                    		if (file.exists() && !file.isDirectory()) 
+                    		{
+                    			new ProcessBuilder(file.getPath().toString()).start();
+                    		}else {
+                    			throw new Exception("not found");
+							}
+						} catch (Exception e2) {
+							JOptionPane.showMessageDialog(
+								    null, 
+								    "Game Excecutable not found", 
+								    "Error", 
+								    JOptionPane.ERROR_MESSAGE
+							);
+						}
+                    }
+                } else {
+                	try {
+                		File file = new File("game.elf");
+                		if (file.exists() && !file.isDirectory()) 
+                		{
+                			 new ProcessBuilder(file.getPath().toString()).start();
+                		}else {
+							throw new Exception("not found");
+						}
+					} catch (Exception e2) {
+						JOptionPane.showMessageDialog(
+							    null, 
+							    "Game Excecutable not found", 
+							    "Error", 
+							    JOptionPane.ERROR_MESSAGE
+						);
+					}
+                }
+                System.exit(0);
+            }
+        });
+        
         frame.setVisible(true);
     }
 
