@@ -8,7 +8,7 @@ public class Ini {
     static String filename = "global.ini";
 
     public static String getValue(String key) {
-        if (filename.isEmpty()) return "null";
+        if (filename.isEmpty()) return "0";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
