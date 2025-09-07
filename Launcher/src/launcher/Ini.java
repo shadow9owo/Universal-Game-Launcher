@@ -28,7 +28,7 @@ public class Ini {
             return null;
         }
 
-        return "null";
+        return null;
     }
 
 
