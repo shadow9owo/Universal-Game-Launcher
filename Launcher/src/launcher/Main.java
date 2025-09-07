@@ -77,6 +77,7 @@ public class Main {
 		    tmpbuffer = Ini.getValue("windowresolution");
 		    Config.resolution_id = Integer.parseInt(tmpbuffer);
 		}else {
+      saveConfig(0);
 			return;
 		}
 		return;
